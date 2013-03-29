@@ -648,6 +648,8 @@
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
             self.oauthViewController.modalPresentationStyle = UIModalPresentationFormSheet;
             oauthNavController.modalPresentationStyle = UIModalPresentationFormSheet;
+            self.oauthViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+            oauthNavController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
         }
         [self.viewController presentViewController:oauthNavController animated:YES completion:^{
             ;
